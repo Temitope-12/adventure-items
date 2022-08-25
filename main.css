@@ -48,12 +48,12 @@ body{
 .link-holder{ 
 display: flex;
  justify-content: flex-end;
-border: 3px solid yellow; 
+/* border: 3px solid yellow;  */
  justify-items: space-between; 
 
 }
 .link-holder ul{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     padding: 0 50px;
     margin: 0% 30px;
     
