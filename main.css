@@ -5,15 +5,18 @@
 }
 
 body{
-    font-style: s;
+    font-style: normal;
 }
 .header{
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border: 3px solid red;
+     width: 400px;
+    height: 400px; 
+    margin: 10px auto;
+    /* border: 3px solid red; */
     margin-right:50px ;
     color: white;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
 
 }
 .header-banner{
@@ -23,18 +26,37 @@ body{
     background: url(header-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid black;
+    /* border: solid black; */
     background-position: center;
     overflow: hidden;
 
     
 }
+.header-content{
+    font-weight: bold;
+    font-style: oblique;
+    padding-top: 60px;
+}
+.heading{
+    padding: 0 25px;
+}
+.arrow-button{
+    padding: 0 25px;
+}
+    
+
 .link-holder{ 
 display: flex;
  justify-content: flex-end;
-border: 3px solid yellow;
-justify-items: space-between;
+border: 3px solid yellow; 
+ justify-items: space-between; 
 
+}
+.link-holder ul{
+    border: 2px solid purple;
+    padding: 0 50px;
+    margin: 0% 30px;
+    
 }
 .head-link{
     list-style: none;
@@ -64,19 +86,22 @@ span{
 .btn-btn{
     color: white;
     background: tomato;
-    width: 180px;
+    width: 200px;
     border-radius: 15px;
     height: 40px;
     border: none;
 }
+.first-button{
+    margin: 30px;
+}
 .second-section{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-items: center;
     justify-content: center;
 }
 .get-started{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -85,19 +110,21 @@ span{
     color: white;
     
 }
+
 .explore{
     height: 320px;
     width: 320px;
     background: tomato;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
     margin-top: 100px;
     border-radius: 15px;
+    text-transform: uppercase;
 }
 .hiking{
     height: 320px;
     width: 320px;
     background: tomato;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-top: 100px;
     border-radius: 15px;
 }
@@ -105,7 +132,7 @@ span{
     height: 320px;
     width: 320px;
     background: tomato;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     margin-top: 100px;
     border-radius: 15px;
 }
@@ -113,7 +140,7 @@ span{
     height: 320px;
     width: 320px;
     background: tomato;
-    border: 2px solid saddlebrown;
+    /* border: 2px solid saddlebrown; */
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 15px;
@@ -124,7 +151,7 @@ span{
     height: 320px;
     width: 320px;
     background: tomato;
-    border: 2px solid darkorchid;
+    /* border: 2px solid darkorchid; */
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 15px;
@@ -133,7 +160,7 @@ span{
     height: 320x;
     width: 320px;
     background: tomato;
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 15px;
@@ -142,6 +169,7 @@ h2{
     padding-top: 20px;
     text-align: left;
     padding: 20px ;
+    color: white;
 }
 p{
     padding: 20px;
@@ -154,16 +182,21 @@ p{
     color: tomato;
     font-weight: bold;
     border: none;
+    padding-right: 20px;
     
 }
 .section3{
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
     background: tomato;
 }
 .footer{
-    border: 2px solid royalblue;
+    /* border: 2px solid royalblue; */
     background: black;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 30px; */
 }
 .last-button{
     
@@ -172,4 +205,28 @@ p{
   height: 40px;
   border-radius: 15px;
   border: none;
+  justify-content: space-between;
+}
+
+
+#bot{
+    border: 2px solid green;
+    /* justify-content: flex-end; */
+    /* align-self: flex-end; */
+    
+    
+}
+.footer-icons{
+    /* border: 3px solid greenyellow; */
+    align-items: center;
+    margin-right: 80px;
+
+
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+
 }
