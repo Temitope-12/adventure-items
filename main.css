@@ -3,39 +3,155 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    font-style: normal;
+html{
+    scroll-behavior: smooth;
 }
+body{
+    font-family: sans-serif;
+}
+.backdrop{
+    background: rgba(119, 119, 119, 0.1); 
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.nav-mobile{
+    display: none;
+    background: rgb(255, 99, 71);
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.top{
+    color: white;
+    font-size: large;
+    align-items: center;
+}
+.HAMBURGER-MENU{
+    /* border: 2px solid white; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    z-index: 1500;
+}
+.menubars{
+    height: 3px;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+.menubars::before,
+.menubars::after{
+    content: '';
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+}
+.menubars::before{
+    transform: translateY(-10px);
+    
+   
+}
+.menubars::after{
+      transform: translateY(10px); 
+     }
+    
+    
+
+.gone .menubars{
+background: transparent;
+}
+
+.gone .menubars::before{
+    transform: rotate(45deg); 
+    background: tomato;
+}
+ .gone .menubars::after{ 
+    transform: rotate(-45deg);
+    background: tomato;
+} 
+.link-holder_mobile{
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background: tomato;
+    right: 0;
+    top: 0;
+    
+}
+.gonemobile{
+    display: block;
+}
+.link-holder_mobile li{
+    list-style: none;
+   
+}
+.head-link_mobile{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.head-link_mobile:hover,
+.head-link_mobile:focus{
+    background: white;
+    color: tomato;
+}
+.active-link{
+    background: white;
+    color: tomato;
+}
+
+.nav-desktop{
+    /* display: flex; */
+}
+
 .header{
      width: 400px;
     height: 400px; 
-    margin: 10px auto;
+    margin: 40px auto;
     /* border: 3px solid red; */
     margin-right:50px ;
-    color: white;
+    /* color: white;
     padding: 20px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
 }
 .header-banner{
-    /* width: 100%;
+     width: 100%;
     height: 500px;
-    border: 3px solid red; */
-    background: url(header-1.jpg);
+    /* border: 3px solid red;  */
+    background:var(--gradient),url(header-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: solid black; */
+    /* border: solid black;  */
     background-position: center;
     overflow: hidden;
 
     
 }
 .header-content{
-    font-weight: bold;
-    font-style: oblique;
-    padding-top: 60px;
+    /* font-weight: bold; */
+    /* font-style: oblique; */
+    color: white;
+    padding-top: 90px;
+    text-align: justify;
+    justify-content: center;
+    /* border: 3px solid brown; */
+}
+.fa-solid{
+    padding: 10px;
 }
 .heading{
     padding: 0 25px;
@@ -51,12 +167,15 @@ display: flex;
 /* border: 3px solid yellow;  */
  justify-items: space-between; 
 
+
 }
 .link-holder ul{
     /* border: 2px solid purple; */
-    padding: 0 50px;
+    /* padding: 0 50px;
     margin: 0% 30px;
-    
+
+     */
+     justify-content: space-evenly;
 }
 .head-link{
     list-style: none;
@@ -95,28 +214,46 @@ span{
     margin: 30px;
 }
 .second-section{
-    /* border: 2px solid green; */
+    padding:80px 0 ; 
+     /* border: 2px solid green;  */
     display: flex;
     justify-items: center;
     justify-content: center;
-}
-.get-started{
-    /* border: 2px solid purple; */
-    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: white;
+    
+
+
     
 }
+.get-started{
+    /* border: 2px solid purple;  */
+    width: 90%;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    
+    /* padding: 80px 0; */
 
+    
+}
+.get-started2{
+    /* border: 2px solid tomato;  */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     padding-top: 50px; 
+    /* margin-top: 50px; */
+}
 .explore{
     height: 320px;
     width: 320px;
     background: tomato;
+    /* padding: 50px 0; */
     /* border: 2px solid grey; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border-radius: 15px;
     text-transform: uppercase;
 }
@@ -125,7 +262,7 @@ span{
     width: 320px;
     background: tomato;
     /* border: 2px solid green; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border-radius: 15px;
 }
 .diving{
@@ -133,7 +270,7 @@ span{
     width: 320px;
     background: tomato;
     /* border: 2px solid violet; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border-radius: 15px;
 }
 .snow{
@@ -141,10 +278,10 @@ span{
     width: 320px;
     background: tomato;
     /* border: 2px solid saddlebrown; */
-    margin-top: 50px;
-    margin-bottom: 100px;
+    /* margin-top: 50px;
+    margin-bottom: 100px; */
     border-radius: 15px;
-    
+    margin-top: 20px 0;
     
 }
 .Surfing{
@@ -152,8 +289,8 @@ span{
     width: 320px;
     background: tomato;
     /* border: 2px solid darkorchid; */
-    margin-top: 50px;
-    margin-bottom: 100px;
+    /* margin-top: 50px;
+    margin-bottom: 100px; */
     border-radius: 15px;
 }
 .swimming{
@@ -161,8 +298,8 @@ span{
     width: 320px;
     background: tomato;
     /* border: 2px solid orangered; */
-    margin-top: 50px;
-    margin-bottom: 100px;
+    /* margin-top: 50px;
+    margin-bottom: 100px; */
     border-radius: 15px;
 }
 h2{
@@ -189,7 +326,7 @@ p{
     /* border: 2px solid teal; */
     background: tomato;
 }
-.footer{
+.footerr{
     /* border: 2px solid royalblue; */
     background: black;
     color: white;
@@ -209,13 +346,7 @@ p{
 }
 
 
-#bot{
-    border: 2px solid green;
-    /* justify-content: flex-end; */
-    /* align-self: flex-end; */
-    
-    
-}
+
 .footer-icons{
     /* border: 3px solid greenyellow; */
     align-items: center;

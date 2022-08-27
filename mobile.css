@@ -1,0 +1,59 @@
+@media screen and (max-width:1130px){
+    .nav-mobile{
+        display: flex;
+    } 
+    .nav-desktop{
+        display: none;
+    } 
+    
+    .footerr{
+    flex-direction: column;
+    
+}
+.header-content{
+    padding: 50px 10px;
+}
+
+/* .explore{
+     flex-direction: column; 
+    /* padding: 0 80px; */
+     /* margin-top: 200px;  */
+
+/* } */
+/* .hiking{
+    margin-t: 80px 0; */
+ */
+.second-section{
+    margin: 50px 0;
+    /* display: inline-block; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+   
+
+    /* padding-bottom: 1800px; */
+}
+.get-started{
+    flex-wrap: wrap;
+
+}
+.get-started2{
+    flex-wrap: wrap;
+justify-content: space-evenly;
+padding-top: 25px;
+
+
+}
+.Surfing{
+    margin-top: 25px;
+}
+.swimming{
+    margin-top: 25px;
+}
+.hiking{
+    margin-top: 25px;
+}
+.diving{
+    margin-top: 25px;
+}
+}

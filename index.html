@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+    <div class="backdrop" onclick="Addclass()"></div>
     <section class="header-banner">
+     
+        <nav class="nav-mobile">
+            <div class="top">EXPLORER</div>
+            <div class="HAMBURGER-MENU " onclick="Addclass()">
+                <div class="menubars"></div>
+            </div>
+        <div class="link-holder_mobile"></i>
+            <ul>
+                <li> <a href="#home" class="head-link_mobile active-link">HOME</a></li>
+                <li> <a href="#about" class="head-link_mobile">ABOUT</a></li>
+                <li> <a href="#contact" class="head-link_mobile">CONTACT</a></li>
+            </ul>
+            </div>
+        </nav>
         <nav class="nav-desktop">
             <div>
             <!-- <div class="explorer"> EXPLORER</div> -->
@@ -22,7 +39,7 @@
             </ul>
             </div>
         </nav>
-        <div class="header">
+        <div class="header" id="home">
             <div class="header-content">
                 
         <div class="heading"><h1>EXPLORE THE WORLD</h1></div>
@@ -34,7 +51,7 @@
     
     </div>
     </section>
-    <section class="second-section">
+    <section class="second-section" id="about">
         <div class="get-started">
             <div class="explore">
                 <h2>Eplore <br/>something <br/>new
@@ -51,6 +68,8 @@
                 <h2>Sky Diving</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam voluptatem maiores modi veritatis. Sapiente sequi porro officiis quo, vel sit harum, repudiandae dolores aspernatur voluptatum perferendis, dolorum qui laborum!rerum quis odit iure at sit odio, labore neque officiis facilis impedit quidem accusantium quod explicabo eveniet vitae. Repellat.</p>
             </div>
+        </div>
+        <div class="get-started2">
                 <div class="snow">
                     <h2>Snow Boarding</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat molestias velit harum totam enim placeat incidunt, officia praesentium neque laborum quisquam corporis? Dolores, debitis excepturi dicta molestias fugit delectus!dolorum qui laborum!rerum quis odit iure at sit odio, labore neque officiis facilis impedit quidem accusantium quod explicabo eveniet vitae. Repellat.</p>
@@ -64,22 +83,25 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat molestias velit harum totam enim placeat incidunt, officia praesentium neque laborum quisquam corporis? Dolores, debitis excepturi dicta molestias fugit delectus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis corporis dicta corrupti. Itaque qui,Repellat.</p>
             </div>
         </div>
+        </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="contact">
         <div class="last">
             <h2>EXPLORER</h2>
             <div id="bot"><button class="last-button bbt"><h3>GET STARTED</h3></button></div>
         </div>
 
     </section>
-    <section class="footer">
+    <footer>
+    <section class="footerr">
         <p class="footend">&copy 2022 Explorer, Built for Xeraxlabs Internship</p>
         <div class="footer-icons"><i class="fa-brands fa-linkedin-in"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-github"></i>
     </div>
     </section>
+</footer>
     
-    
+    <script src="main.js"></script>
 </body>
 </html>
