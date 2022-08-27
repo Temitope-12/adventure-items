@@ -233,6 +233,7 @@ span{
     display: flex;
     color: white;
     justify-content: space-evenly;
+    align-items: center;
     
     /* padding: 80px 0; */
 
@@ -245,6 +246,7 @@ span{
     flex-direction: row;
     justify-content: space-evenly;
      padding-top: 50px; 
+     align-items: center;
     /* margin-top: 50px; */
 }
 .explore{
@@ -281,7 +283,7 @@ span{
     /* margin-top: 50px;
     margin-bottom: 100px; */
     border-radius: 15px;
-    margin-top: 20px 0;
+    /* margin-top: 20px 0; */
     
 }
 .Surfing{
